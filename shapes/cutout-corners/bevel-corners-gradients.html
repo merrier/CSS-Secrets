@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>切角效果</title>
+</head>
+
+<style>
+    /**
+     * Beveled corners — with gradients
+     */
+
+    div {
+        background: #58a;
+        background: linear-gradient(135deg, transparent 15px, #58a 0) top left,
+        linear-gradient(-135deg, transparent 15px, #58a 0) top right,
+        linear-gradient(-45deg, transparent 15px, #58a 0) bottom right,
+        linear-gradient(45deg, transparent 15px, #58a 0) bottom left;
+        background-size: 50% 50%;
+        background-repeat: no-repeat;
+
+        padding: 1em 1.2em;
+        max-width: 12em;
+        color: white;
+        font: 150%/1.6 Baskerville, Palatino, serif;
+    }
+</style>
+
+<body>
+
+<div>Hey, focus! You’re supposed to be looking at my corners, not reading my text. The text is just placeholder!</div>
+
+</body>
+
+<script src="/common/common.js"></script>
+<script>
+
+</script>
+
+</html>

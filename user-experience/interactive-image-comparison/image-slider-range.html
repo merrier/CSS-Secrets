@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>交互式的图片对比控件(范围输入控件)</title>
+</head>
+
+<style>
+    .image-slider {
+        position:relative;
+        display: inline-block;
+    }
+    .image-slider > div {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        width: 50%;
+        overflow: hidden;
+    }
+    .image-slider img {
+        display: block;
+        user-select: none;
+    }
+    .image-slider input {
+        position: absolute;
+        left: 0;
+        bottom: 10px;
+        margin: 0;
+        width: 50%;
+        transform: scale(2);
+        transform-origin: left bottom;
+    }
+</style>
+
+<body>
+
+<div class="image-slider">
+    <img src="http://csssecrets.io/images/adamcatlace-before.jpg" alt="Before" />
+    <img src="http://csssecrets.io/images/adamcatlace.jpg" alt="After" />
+</div>
+
+</body>
+
+<script src="../../common/common.js"></script>
+<script>
+    $$('.image-slider').forEach(function(slider) { // 创建附加的div元素，并用它包住第一个图片元素
+        var div = document.createElement('div');
+        var img = slider.querySelector('img');
+        slider.insertBefore(img, div);
+        div.appendChild(img);
+        // 创建滑块
+        var range = document.createElement('input'); range.type = 'range';
+        range.oninput = function() {
+            div.style.width = this.value + '%'; };
+        slider.appendChild(range);
+    });
+</script>
+
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>半透明边框</title>
+</head>
+
+<style>
+    /**
+     * Translucent borders
+     */
+
+    body {
+        background: url('http://csssecrets.io/images/stone-art.jpg');
+    }
+
+    div {
+        border: 10px solid hsla(0,0%,100%,.5);
+        background: white;
+        background-clip: padding-box;
+
+        /* styling */
+        max-width: 20em;
+        padding: 2em;
+        margin: 2em auto 0;
+        font: 100%/1.5 sans-serif;
+    }
+</style>
+
+<body>
+
+<div>
+    Can I haz semi-transparent borders?
+    Pretty please?
+</div>
+
+</body>
+
+<script src="/common/common.js"></script>
+<script>
+
+</script>
+
+</html>

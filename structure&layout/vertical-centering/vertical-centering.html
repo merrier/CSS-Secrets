@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>垂直居中(flexbox)</title>
+</head>
+
+<style>
+    /**
+     * Vertical centering - Flexbox solution
+     */
+
+    * { margin: 0 }
+
+    body {
+        display: flex;
+        min-height: 100vh;
+    }
+
+    main {
+        padding: 1em 2em;
+        margin: auto;
+        box-sizing: border-box;
+        background: #655;
+        color: white;
+        text-align: center;
+    }
+
+    h1 {
+        margin-bottom: .2em;
+        font-size: 150%;
+    }
+
+    body {
+        background: #fb3;
+        font: 100%/1.5 sans-serif;
+    }
+</style>
+
+<body>
+
+<main>
+    <h1>Am I centered yet?</h1>
+    <p>Center me, please!</p>
+</main>
+
+</body>
+
+<script src="/common/common.js"></script>
+<script>
+
+</script>
+
+</html>

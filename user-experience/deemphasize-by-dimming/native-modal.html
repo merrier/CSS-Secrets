@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>通过阴影来弱化背景(backdrop)</title>
+</head>
+
+<style>
+    /**
+     * Native modal dialog (limited support)
+     */
+
+    dialog::backdrop {
+        background: rgba(0,0,0,.8)
+    }
+</style>
+
+<body>
+
+<button onclick="document.querySelector('#modal').showModal()">Click me</button>
+<dialog id="modal">
+    O HAI!
+    <button onclick="this.parentNode.close()">Close</button>
+</dialog>
+
+</body>
+
+<script src="/common/common.js"></script>
+<script>
+
+</script>
+
+</html>

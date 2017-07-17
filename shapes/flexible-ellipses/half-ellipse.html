@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>自适应半椭圆</title>
+</head>
+
+<style>
+    /**
+     * Flexible half ellipse
+     */
+
+    div {
+        display: inline-block;
+        width: 16em;
+        height: 10em;
+        margin: 1em;
+        background: #fb3;
+        border-radius: 50% / 100% 100% 0 0;
+    }
+
+    div:nth-of-type(2) { border-radius: 50% / 0 0 100% 100%; }
+    div:nth-of-type(3) { border-radius: 100% 0 0 100% / 50%; }
+    div:nth-of-type(4) { border-radius: 0 100% 100% 0 / 50%; }
+</style>
+
+<body>
+
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+
+</body>
+
+<script src="/common/common.js"></script>
+<script>
+
+</script>
+
+</html>

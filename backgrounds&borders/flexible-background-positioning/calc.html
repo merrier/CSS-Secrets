@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>灵活的背景定位-calc()方案</title>
+</head>
+
+<style>
+    /**
+     * Flexible background positioning
+     * via calc()
+     */
+
+    div {
+        background: url(http://csssecrets.io/images/code-pirate.svg)
+        no-repeat bottom right #58a;
+        background-position: calc(100% - 20px) calc(100% - 10px);
+
+        /* Styling */
+        max-width: 10em;
+        min-height: 5em;
+        padding: 10px;
+        color: white;
+        font: 100%/1 sans-serif;
+    }
+</style>
+
+<body>
+
+<div>Code Pirate</div>
+
+</body>
+
+<script src="/common/common.js"></script>
+<script>
+
+</script>
+
+</html>

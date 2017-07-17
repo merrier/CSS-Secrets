@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>文本行的斑马条纹</title>
+</head>
+
+<style>
+    /**
+     * Zebra striped text lines
+     */
+
+    pre {
+        padding: .5em;
+        line-height: 1.5;
+        background: hsl(20, 50%, 95%);
+        background-image: linear-gradient(rgba(120,0,0,.1) 50%, transparent 0);
+        background-size: auto 3em;
+        background-origin: content-box;
+        font-family: Consolas, Monaco, monospace;
+    }
+
+    code { font: inherit }
+</style>
+
+<body>
+
+<pre><code>while (true) {
+	var d = new Date();
+	if (d.getDate()==1 &amp;&amp;
+	    d.getMonth()==3) {
+		alert("TROLOLOL");
+	}
+}</code></pre>
+
+</body>
+
+<script src="/common/common.js"></script>
+<script>
+
+</script>
+
+</html>

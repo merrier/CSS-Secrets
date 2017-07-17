@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>染色效果(background-blend-mode)</title>
+</head>
+
+<style>
+    /**
+     * Color tinting — with blending modes
+     */
+
+    .tinted-image {
+        width: 640px; height: 440px;
+        background-size: cover;
+        background-color: hsl(335, 100%, 50%);
+        background-blend-mode: luminosity;
+        transition: .5s background-color;
+    }
+
+    .tinted-image:hover {
+        background-color: transparent;
+    }
+</style>
+
+<body>
+
+<div style="background-image:url(http://csssecrets.io/images/tiger.jpg)" class="tinted-image"></div>
+
+</body>
+
+<script src="/common/common.js"></script>
+<script>
+
+</script>
+
+</html>

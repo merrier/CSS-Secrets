@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>菱形图片(clip-path)</title>
+</head>
+
+<style>
+    /**
+     * Diamond images — via clip-path
+     */
+
+    img {
+        max-width: 250px;
+        margin: 20px;
+        -webkit-clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
+        clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
+        transition: 1s;
+    }
+
+    img:hover {
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+</style>
+
+<body>
+
+<img src="http://csssecrets.io/images/adamcatlace.jpg" />
+<img src="http://csssecrets.io/images/adam-sleeping.jpg" />
+
+</body>
+
+<script src="/common/common.js"></script>
+<script>
+
+</script>
+
+</html>
