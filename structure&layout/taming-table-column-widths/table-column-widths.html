@@ -41,51 +41,52 @@
 <body>
 
 <section>
-    <h1>With table-layout: auto</h1>
+    <h1>此时样式为：table-layout: auto</h1>
     <div>
         <table>
             <tr>
-                <td>If we don’t…</td>
-                <td>specify a cell width, they will be assigned one that depends on their contents. Notice how the cell with the more content here is much wider.</td>
+                <td>如果我们不…</td>
+                <td>指定单元格宽度，那么将分配一个取决于内容的单元格宽度。注意这里的内容越多的单元格就越宽。注意这里的内容越多的单元格就越宽。注意这里的内容越多的单元格就越宽。</td>
             </tr>
         </table>
 
         <table>
             <tr>
-                <td>If we don’t…</td>
-                <td>specify a cell width, they will be assigned one that depends on their contents. Notice how the cell with the more content here is much wider.</td>
+                <td>如果我们不…</td>
+                <td>指定单元格宽度，那么将分配一个取决于内容的单元格宽度。注意这里的内容越多的单元格就越宽。注意这里的内容越多的单元格就越宽。注意这里的内容越多的单元格就越宽。</td>
             </tr>
             <tr>
-                <td>All rows take part in calculating the widths, not just the first one.</td>
-                <td>Notice how the dimensions here are different than the previous example.</td>
-            </tr>
-        </table>
-
-        <table>
-            <tr>
-                <td style="width: 1000px">If we specify a width, it will not always be followed. I have a width of <code>1000px</code>…</td>
-                <td style="width: 2000px">…and I have a width of <code>2000px</code>. Because there’s not enough space for <code>3000px</code>, they are reduced proportionally, to 33.3% and 66.6% of the total width.</td>
+                <td>所有的行都参与计算宽度，而不仅仅是第一个宽度。</td>
+                <td>注意这里的尺寸和前面的例子不一样。</td>
             </tr>
         </table>
 
         <table>
             <tr>
-                <td>If we prevent word wrapping, the table can become so wide it grows beyond its container.</td>
-                <td class="preformatted">…and <code>text-overflow: ellipsis</code> doesn’t help either.</td>
+                <td style="width: 1000px">如果我们指定宽度，它不会永远保持我们指定的宽度不变。比如我将这里宽度设置为<code>1000px</code>…</td>
+                <td style="width: 2000px">…然后我将这里的宽度设置为<code>2000px</code>。因为没有足够的宽度容纳<code>3000px</code>的内容，他们将按照比例缩小（1：2），最终为总宽度的33.3%和66.6%</td>
             </tr>
         </table>
 
         <table>
             <tr>
-                <td>Large images and blocks of code can also cause the same issue.</td>
-                <td><img src="http://lea.verou.me/book/panoramic.jpg" /></td>
+                <td>如果我们不使用文字包装，那么表格就会变得如此之宽以至于超出了它的容器。表格就会变得如此之宽以至于超出了它的容器。</td>
+                <td class="preformatted">…同时<code>text-overflow: ellipsis</code>这个样式也不会起作用。</td>
+            </tr>
+        </table>
+
+        <table>
+            <tr>
+                <td>大的图片和代码块也可能导致同样的问题。</td>
+                <!--<td><img src="http://lea.verou.me/book/panoramic.jpg" /></td>-->
+                <td><img src="../../images/panoramic.jpg" /></td>
             </tr>
         </table>
     </div>
 </section>
 
 <section>
-    <h1>With table-layout: fixed</h1>
+    <h1>此时样式为：table-layout: fixed</h1>
     <div></div>
 </section>
 
